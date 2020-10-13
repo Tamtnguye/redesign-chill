@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.logo {
+  justify-position: center;
+  align-self: center;
+}
 
 .App-logo {
   height: 40vmin;
