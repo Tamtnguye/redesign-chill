@@ -1,27 +1,29 @@
-import { doesNotMatch } from 'assert';
+
 import React from 'react';
-import {Home} from './Home';
-import {Account} from './Account';
-import {About} from './About';
-import {NoMatch} from './NoMatch';
-import {Phone} from './Phone';
-import {Layout} from "./components/Layout";
-import {NavBar} from "./components/NavBar";
-import {BigBack} from "./components/BigBack";
+import {Home} from './pages/HomePage/Home';
+import {Account} from './pages/Account/Account';
+import {About} from './pages/About/About';
+import {NoMatch} from './pages/NoMatch';
+import {Phone} from './pages/Phone/Phone';
+
+import {Navbar, Footer} from "./components";
+
+import GlobalStyle from "./GlobalStyles";
 
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
 function App() {
   return (
-    <React.Fragment>
-      <NavBar />
-      <BigBack />
-      <Layout>
+    
+      
+      
+      
       <Router>
+        <GlobalStyle /> 
+           <Navbar />
         <Switch>
-          <Route exact path="/" component={Home}
- />
+          <Route path="/" exact component={Home} />
  <Route  path="/about" component={About}
  />
  <Route  path="/phone" component={Phone}
@@ -31,9 +33,9 @@ function App() {
  <Route  component={NoMatch}
  />
          </Switch>
+         <Footer />
       </Router>
-      </Layout>
-    </React.Fragment>
+      
   );
 }
 
