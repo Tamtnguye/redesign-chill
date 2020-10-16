@@ -4,11 +4,13 @@ import {homeObj,
     homeObjThree,
     homeObjFour,
     } from "./Data";
-import {InfoSection} from '../../components';
+  
+import {InfoSection, HeroSection} from '../../components';
 
 export const Home = () => {
     return (
         <>
+            <HeroSection />
            <InfoSection {...homeObj} />
            <InfoSection {...homeObjTwo} />
            <InfoSection {...homeObjThree} />

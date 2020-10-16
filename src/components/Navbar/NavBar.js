@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Button} from '../../GlobalStyles';
 import { FaBars, FaTimes} from "react-icons/fa";
 import { IconContext} from "react-icons/lib";
+import myLogo from '../../assets/chill_mobile_logo.png';
 import { Nav, 
     NavbarContainer, 
     NavLogo, 
@@ -19,7 +20,7 @@ const NavBar = () => {
 
 const [click, setClick] = useState(false);
 const [button, setButton] = useState(true);
-
+const closeMobileMenu = () => setClick(false);
 const handleClick = () => setClick(!click);
 
 const showButton = () => {
@@ -41,9 +42,9 @@ window.addEventListener('resize', showButton);
         <IconContext.Provider value={{color: '#fff'}}>
         <Nav> 
             <NavbarContainer>
-                <NavLogo to="/">
-                    <NavIcon />
-                    Chill
+                <NavLogo to="/" onClick={closeMobileMenu}>
+                    <NavIcon src={myLogo}/>
+                
                 </NavLogo>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
@@ -72,7 +73,7 @@ window.addEventListener('resize', showButton);
                             </NavBtnLink>
                         ) : (
                             <NavBtnLink to='/signup'>
-                                <Button  fontBig primary>
+                                <Button  onClick={closeMobileMenu} fontBig primary>
                                     SIGN UP
                                 </Button>
                             </NavBtnLink>

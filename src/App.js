@@ -2,11 +2,12 @@
 import React from 'react';
 import {Home} from './pages/HomePage/Home';
 import {Account} from './pages/Account/Account';
+import {Service} from './pages/Service/Service';
 import {About} from './pages/About/About';
 import {NoMatch} from './pages/NoMatch';
 import {Phone} from './pages/Phone/Phone';
 
-import {Navbar, Footer} from "./components";
+import {Navbar, Footer, ScrollTop} from "./components";
 
 import GlobalStyle from "./GlobalStyles";
 
@@ -21,6 +22,7 @@ function App() {
       
       <Router>
         <GlobalStyle /> 
+        <ScrollTop />
            <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -30,6 +32,7 @@ function App() {
  />
  <Route  path="/account" component={Account}
  />
+ <Route path='/service' component={Service} />
  <Route  component={NoMatch}
  />
          </Switch>

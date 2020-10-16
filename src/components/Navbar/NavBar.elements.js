@@ -38,9 +38,14 @@ display: flex;
 align-items: center;
 `;
 
-export const NavIcon = styled(ImConnection)`
-margin-right: 0.5rem;
-`
+// export const NavIcon = styled.div`
+// margin-right: 0.5rem;
+// background-image: url(${myLogo});
+// `
+export const NavIcon = styled.img`
+width: 200px;
+height:100px;
+margin:2px`;
 
 export const MobileIcon = styled.div`
 display: none;
@@ -63,6 +68,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
+    
     height: 90vh;
     position: absolute;
     top: 80px;
