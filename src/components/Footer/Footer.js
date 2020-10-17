@@ -23,11 +23,11 @@ import {FooterContainer,
 
 //check on how to get font-family to work with styled
 //also animation
- const Footer = () => {
+ const Footer = ( ) => {
     return (
-        <FooterContainer>
+        <FooterContainer >
             <FooterSubscription>
-                <FooterSubHeading>
+                <FooterSubHeading >
                     Join our exclusive membership to receive the latest news and trends
                 </FooterSubHeading>
                 <FooterSubText>

@@ -1,22 +1,26 @@
-
+import {Link as LinkS} from 'react-scroll';
 import styled from 'styled-components';
 import { Container } from '../../GlobalStyles';
-import {Link} from 'react-router-dom';
+import {Link as LinkR} from 'react-router-dom';
 import { ImConnection } from "react-icons/im";
 
 export const Nav = styled.nav`
 background: #509EA7;
-height: 100px;
+height: 80px;
 width: 100%;
+margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.2rem;
+font-size: 1rem;
 font-family: 'Open Sans';
 position: sticky;
 top: 0;
 z-index: 999;
 
+@media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+}
 
 `
 
@@ -24,19 +28,27 @@ export const NavbarContainer = styled(Container)`
 display: flex;
 justify-content: space-between;
 height: 80px;
+z-index: 1;
+width: 100%;
+padding: 0 24px;
+
 
 ${Container}
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(LinkR)`
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
 font-size: 2rem;
 display: flex;
+font-weight: bold;
+margin-left: 24px;
 align-items: center;
 `;
+
+
 
 // export const NavIcon = styled.div`
 // margin-right: 0.5rem;
@@ -44,7 +56,7 @@ align-items: center;
 // `
 export const NavIcon = styled.img`
 width: 200px;
-height:100px;
+height:80px;
 margin:2px`;
 
 export const MobileIcon = styled.div`
@@ -63,7 +75,9 @@ export const NavMenu = styled.ul`
 display: flex;
 align-items: center;
 list-style: none;
+
 text-align: center;
+margin-right: -22px;
 @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -77,14 +91,17 @@ text-align: center;
     opacity: 1;
     transition: all 0.5s ease;
     background: #2c2331;
+    color: #1694cf;
 }`;
 
 export const NavItem = styled.li`
-height: 80px;
+height: 95px;
+font-size: 1.3rem;
+font-weight: bold;
 border-bottom: 2px solid transparent;
 
 &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 5px solid #e98c10;
 }
 
 @media screen and (max-width: 960px) {
@@ -96,14 +113,18 @@ border-bottom: 2px solid transparent;
 `;
 
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkR)`
 color: #fff;
 display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0.5rem 1rem;
 height: 100%;
+cursor: pointer;
 
+&.active {
+    border-bottom: 3px solid #e98c10;
+}
 @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
@@ -111,7 +132,7 @@ height: 100%;
     display: table;
 
     &:hover {
-        color:#4b59f7;
+        color:#101522;
         transition: all 0.3s ease;
     }
 }
@@ -128,7 +149,7 @@ export const NavItemBtn = styled.li`
 }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkR)`
 display: flex;
 justify-content: center;
 align-items: center;

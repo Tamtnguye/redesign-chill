@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Button} from '../../GlobalStyles';
+import {animateScroll as scroll} from 'react-scroll';
 import { FaBars, FaTimes} from "react-icons/fa";
 import { IconContext} from "react-icons/lib";
 import myLogo from '../../assets/chill_mobile_logo.png';
@@ -12,7 +13,9 @@ import { Nav,
     NavItem,
     NavLinks,
     NavItemBtn,
-    NavBtnLink 
+    NavBtnLink,
+    Form,
+    FormInput 
 } from './NavBar.elements';
 
 
@@ -31,6 +34,10 @@ const showButton = () => {
     }
 }
 
+const toggleHome = () => {
+    scroll.scrollToTop();
+}
+
 useEffect(() => {
     showButton()
 }, [])
@@ -43,19 +50,22 @@ window.addEventListener('resize', showButton);
         <Nav> 
             <NavbarContainer>
                 <NavLogo to="/" onClick={closeMobileMenu}>
-                    <NavIcon src={myLogo}/>
+                    <NavIcon onClick={toggleHome}src={myLogo}/>
                 
                 </NavLogo>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
+                
+                    
+                    
                     <NavItem>
-                        <NavLinks to='/'>Home</NavLinks>
+                    <NavLinks to="/about">About</NavLinks>
                        
                     </NavItem>
                     <NavItem>
-                    <NavLinks to='/about'>About</NavLinks>
+                        <NavLinks to='/service'>Service</NavLinks>
                        
                     </NavItem>
                     <NavItem>
@@ -66,6 +76,7 @@ window.addEventListener('resize', showButton);
                     <NavLinks to='/account'>Account</NavLinks>
                        
                     </NavItem>
+                    
                     <NavItemBtn>
                         {button ? (
                             <NavBtnLink to="/signup">
@@ -79,8 +90,8 @@ window.addEventListener('resize', showButton);
                             </NavBtnLink>
                         )}
                     </NavItemBtn>
-
-                </NavMenu>
+                    </NavMenu>
+                
             </NavbarContainer>
         </Nav>
         </IconContext.Provider>

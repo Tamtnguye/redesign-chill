@@ -3,14 +3,25 @@ import styled from 'styled-components';
 
 export const PricingSection = styled.div`
   padding: 100px 0 160px;
+ 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: #4b59f7;
+  justify-content: space-between;
+  background: #2c2331;
+  
+`;
+
+export const PricingImg = styled.img`
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+
 `;
 
 export const PricingWrapper = styled.div`
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -29,8 +40,10 @@ export const PricingHeading = styled.h1`
 `;
 
 export const PricingContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  display: flex;    
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
   align-items: center;
   @media screen and (max-width: 960px) {
     display: flex;
@@ -42,10 +55,12 @@ export const PricingContainer = styled.div`
 `;
 
 export const PricingCard = styled(Link)`
-  background: #242424;
+  background: #1694cf;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;
   height: 500px;
+  margin: 30px;
+  
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
@@ -70,7 +85,7 @@ export const PricingCardInfo = styled.div`
   height: 500px;
   padding: 24px;
   align-items: center;
-  color: #fff;
+  color: #101522;
 `;
 
 export const PricingCardIcon = styled.div`
