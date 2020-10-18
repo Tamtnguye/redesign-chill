@@ -10,13 +10,12 @@ import { InfoSec,
     Heading,
     Subtitle,
     ImgWrapper,
-    Img,
-    Hovbutton
+    Img
 
-} from './InfoSection.element';
+} from '../../components/InfoSection/InfoSection.element';
 
 
-const InfoSection = ({
+export const AccountSection = ({
     primary,
     lightBg, 
     imgStart, 
@@ -30,10 +29,10 @@ const InfoSection = ({
     img,
     alt,
     start,
-    location}) => {
+    id}) => {
     return (
         <>
-            <InfoSec lightBg={lightBg}>
+            <InfoSec lightBg={lightBg} id={id}>
                 <Container>
                     <InfoRow imgStart={imgStart}>
                         <InfoColumn>
@@ -43,10 +42,7 @@ const InfoSection = ({
                                 </TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle lightSubText={lightSubText}>{description}</Subtitle>
-                                <Link to={location}>
-                                    
-                                    <Hovbutton primary={primary}>{buttonLabel}</Hovbutton> 
-                                </Link>
+                                
                             </TextWrapper>
                         </InfoColumn>
                         <InfoColumn>
@@ -61,4 +57,4 @@ const InfoSection = ({
     )
 }
 
-export default InfoSection
+export default AccountSection

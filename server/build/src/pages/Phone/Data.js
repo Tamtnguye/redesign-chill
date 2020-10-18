@@ -1,4 +1,4 @@
-export const accountObj = {
+export const homeObj = {
     lightBg: false,
     primary: true,
      
@@ -7,10 +7,11 @@ export const accountObj = {
     lightText: true,
     lightSubText: true, 
     buttonLabel: 'Get Started', 
-    description: "Your current bill is: $65 ", 
-    topLine: 'Welcome Back',
-    headline: 'Nathan Cho',
-    img: require('../../assets/user.jpg'),
+    description: "We help Canadians to connect across the country", 
+    headline: 'Lead Generation In 6G for Wireless Connection', 
+    topLine: 'Marketing Agency',
+    
+    img: require('../../assets/mobile_blue.svg'),
     alt: 'Image',
     start: ''
 };

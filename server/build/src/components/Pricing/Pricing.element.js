@@ -1,74 +1,11 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const FilterSection = styled.div`
-padding-left: 10px;
- padding-right: 10px;
- padding-top: 20px;
-margin-top: 108px;
- margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  /* background: #101522; */
-  background: grey;
-`;
-
-export const FilterWrapper = styled.div`
-  display: flex;
-  color: #fff;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 10px;
-  @media screen and (max-width: 960px) {
-    margin: 0 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-export const FilterSource = styled.div`
-display: block;
-position: relative;
-
-padding-top: 20px;
-padding-bottom: 20px;
-border-bottom: 3px solid grey;
-cursor: pointer;
-font-size: 22px;
-padding-left: 20px;
-`
-
-export const FilterOffer = styled.div`
-display: block;
-padding-top: 20px;
-padding-bottom: 20px;
-position: relative;
-
-border-bottom: 3px solid grey;
-cursor: pointer;
-font-size: 22px;
-padding-left: 20px;
-`
-
-export const FilterDevice = styled.div`
-display: block;
-padding-top: 20px;
-padding-bottom: 20px;
-position: relative;
-cursor: pointer;
-font-size: 22px;
-padding-left: 20px;
-`
-
 export const PricingSection = styled.div`
   padding: 100px 0 50px;
  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background: #101522;
   
