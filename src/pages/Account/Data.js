@@ -1,4 +1,4 @@
-export const homeObj = {
+export const accountObj = {
     lightBg: false,
     primary: true,
      

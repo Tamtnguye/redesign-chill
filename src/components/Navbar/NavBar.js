@@ -58,7 +58,10 @@ window.addEventListener('resize', showButton);
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
                 
-                    
+                <NavItem>
+                    <NavLinks to="/">Home</NavLinks>
+                       
+                    </NavItem>
                     
                     <NavItem>
                     <NavLinks to="/about">About</NavLinks>

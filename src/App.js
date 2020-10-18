@@ -6,7 +6,7 @@ import {Service} from './pages/Service/Service';
 import {About} from './pages/About/About';
 import {NoMatch} from './pages/NoMatch';
 import {Phone} from './pages/Phone/Phone';
-
+import {Signup} from './pages/Signup/Signup';
 import {Navbar, Footer, ScrollTop} from "./components";
 
 import GlobalStyle from "./GlobalStyles";
@@ -33,6 +33,8 @@ function App() {
  <Route  path="/account" component={Account}
  />
  <Route path='/service' component={Service} />
+ <Route  path="/signup" component={Signup}
+ />
  <Route  component={NoMatch}
  />
          </Switch>

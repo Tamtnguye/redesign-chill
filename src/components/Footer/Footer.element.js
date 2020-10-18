@@ -4,7 +4,7 @@ import { ImConnection } from "react-icons/im";
 
 
 export const FooterContainer = styled.div`
-background-color: #101522;
+background-color: #2c2331;
 
 padding: 4rem 0 2 rem 0;
 display:flex;

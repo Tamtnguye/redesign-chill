@@ -82,4 +82,24 @@ display: inline-block;
 max-height: 500px;
 `;
 
+export const Hovbutton = styled.button`
+width: 250px;
+height: 50px;
+border: none;
+color: white;
+background-color: #e98c10;
+border-radius: 6px;
+box-shadow: inset 0 0 0 0 #1694CF;
+transition: ease-out 0.3s;
+font-size: 1.5rem;
+outline: none;
+
+
+&:hover {
+    box-shadow: inset 300px 0 0 0 #1694CF;
+    cursor: pointer;
+    color: black;
+}
+`;
+
 

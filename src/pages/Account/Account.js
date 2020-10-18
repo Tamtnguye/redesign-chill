@@ -1,12 +1,15 @@
+
+
 import React from "react";
+import {accountObj} from './Data';
+import {AccountSection} from './AccountSection';
 
 
- export const Account =  () =>{
+ export const Account = () =>{
    
     return(
-   <div>
-        <h1>Account</h1>
-    </div>
+   <>
+        <AccountSection {...accountObj} />
+    </>
     )
 };
-

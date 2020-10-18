@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const PricingSection = styled.div`
-  padding: 100px 0 160px;
+  padding: 100px 0 50px;
  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #2c2331;
+  background: #101522;
   
 `;
 
@@ -112,7 +112,7 @@ export const PricingCardFeatures = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #a9b3c1;
+  color: #fff;
 `;
 
 export const PricingCardFeature = styled.li`
