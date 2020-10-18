@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d5ad560.chunk.css",
+    "main.js": "/static/js/main.8efcc9b7.chunk.js",
+    "main.js.map": "/static/js/main.8efcc9b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7cfd2f58.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7cfd2f58.js.map",
+    "static/js/2.4800a22d.chunk.js": "/static/js/2.4800a22d.chunk.js",
+    "static/js/2.4800a22d.chunk.js.map": "/static/js/2.4800a22d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a6c357079d425b6429944c6404f835b9.js": "/precache-manifest.a6c357079d425b6429944c6404f835b9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6d5ad560.chunk.css.map": "/static/css/main.6d5ad560.chunk.css.map",
+    "static/js/2.4800a22d.chunk.js.LICENSE.txt": "/static/js/2.4800a22d.chunk.js.LICENSE.txt",
+    "static/media/Login.svg": "/static/media/Login.fc1c2090.svg",
+    "static/media/chill_mobile_logo.png": "/static/media/chill_mobile_logo.f4d86efe.png",
+    "static/media/mobile_blue.svg": "/static/media/mobile_blue.07efe79e.svg",
+    "static/media/person1.jpeg": "/static/media/person1.be49ab55.jpeg",
+    "static/media/reachout.jpg": "/static/media/reachout.346892d9.jpg",
+    "static/media/reachout2.jpg": "/static/media/reachout2.ad141772.jpg",
+    "static/media/samsung-s20.png": "/static/media/samsung-s20.8a13e65c.png",
+    "static/media/success.svg": "/static/media/success.0a482171.svg",
+    "static/media/undraw_Mobile_pay_re_sjb8.svg": "/static/media/undraw_Mobile_pay_re_sjb8.def428e1.svg",
+    "static/media/user.jpg": "/static/media/user.e1aac529.jpg",
+    "static/media/video.mp4": "/static/media/video.43ade14e.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cfd2f58.js",
+    "static/js/2.4800a22d.chunk.js",
+    "static/css/main.6d5ad560.chunk.css",
+    "static/js/main.8efcc9b7.chunk.js"
+  ]
+}
